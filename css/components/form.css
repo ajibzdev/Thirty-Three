@@ -1,0 +1,41 @@
+.form {
+  width: 40rem;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-dark-grey200);
+}
+
+.form__heading {
+  margin: 1.2rem 0rem;
+}
+
+.form__group {
+  width: 100%;
+}
+
+.form__group input,
+.form__group input:focus,
+.form__group input:active {
+  font-size: 1.6em;
+  color: var(--color-white);
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 1rem 0rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-dark-grey100);
+}
+
+.form__group label {
+  color: var(--color-white);
+  font-size: 1.2rem;
+}
+
+.form__btn {
+  margin: 1.2rem 0rem;
+}
+
+.form__info {
+  margin: 1rem 0rem;
+  font-size: 1.4rem;
+}

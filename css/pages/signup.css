@@ -1,0 +1,13 @@
+@import "../base/base.css";
+@import "../base/typography.css";
+@import "../components/button.css";
+@import "../components/form.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-dark-grey);
+}

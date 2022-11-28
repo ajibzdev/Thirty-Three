@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+:root {
+  --color-primary: #77ff00;
+
+  --color-light-grey: #a5a5a5;
+  --color-dark-grey: #171717;
+
+  --color-black: #000;
+
+  --color-white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--color-black);
+  position: relative;
+}
+
+/* HOME IMAGE */
+.home-image {
+  position: absolute;
+  /* right: 0; */
+  top: 0;
+  z-index: -1;
+}
+
+/* NAV  */
+.nav {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-black);
+  box-shadow: 0, 0.5rem 1rem rgba(255, 255, 255, 0.2);
+}
+
+.nav__content {
+}
+
+.nav__content ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10;
+}
+
+.nav__content ul li {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.nav__content ul li a:active,
+.nav__content ul li a:visited {
+}
+
+/* WRAPPER */
+
+.wrapper {
+  padding: 2.5rem;
+}
+
+.wrapper-main__heading {
+  width: 70%;
+}
+
+.wrapper-main__secondary-heading {
+  width: 40%;
+  margin-top: 1rem;
+}
