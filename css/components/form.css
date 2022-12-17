@@ -39,3 +39,9 @@
   margin: 1rem 0rem;
   font-size: 1.4rem;
 }
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: "600";
+}

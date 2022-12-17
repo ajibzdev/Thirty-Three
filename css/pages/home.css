@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+@import "../../../css-project-1/css/style.css";
 :root {
   --color-primary: #77ff00;
 
@@ -10,15 +11,15 @@
   --color-white: #fff;
 }
 
-html {
+/* html {
   font-size: 62.5%;
 }
 
 body {
-  overflow: hidden;
   min-height: 100vh;
   font-family: "Inter", sans-serif;
-}
+} 
+/*
 
 *,
 *::before,
@@ -27,24 +28,34 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
+*/
 .container {
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100vw;
   background-color: var(--color-black);
+  /* filter: blur(3px); */
   position: relative;
 }
 
 /* HOME IMAGE */
+.home-image-container {
+  position: relative;
+}
+
 .home-image {
   position: absolute;
-  /* right: 0; */
-  top: 0;
-  z-index: -1;
+  right: -41%;
+  top: -15rem;
+  bottom: 0rem;
+  /* height: 100%; */
+  width: 100%;
+  z-index: 1;
 }
 
 /* NAV  */
 .nav {
+  position: relative;
+  z-index: 2;
   width: 100%;
   padding: 1.5rem 2.5rem;
   display: flex;
@@ -68,10 +79,49 @@ body {
   margin: 0 1rem;
   text-decoration: none;
 }
-
-.nav__content ul li a:active,
-.nav__content ul li a:visited {
+.nav__content ul li > a:link,
+.nav__content ul li > a:active,
+.nav__content ul li > a:visited {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
 }
+
+.nav__content ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 19px;
+  height: 1px;
+  background-color: var(--color-white);
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  /* width: 0; */
+}
+
+/* .nav__content ul li a:hover::after {
+  background-color: var(--color-primary);
+}
+
+.nav__content ul li {
+  position: relative;
+} */
+/* .nav__content ul li div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50;
+  background-color: white;
+}
+
+.nav__content ul li:nth-child() a:hover + .dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  color: white;
+} */
 
 /* WRAPPER */
 
@@ -80,10 +130,25 @@ body {
 }
 
 .wrapper-main__heading {
-  width: 70%;
+  width: 110%;
 }
 
 .wrapper-main__secondary-heading {
   width: 40%;
   margin-top: 1rem;
 }
+
+/* .dropdown {
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  display: "none";
+}
+
+.dropdown.visible {
+  color: var(--color-white);
+  opacity: 1;
+  visibility: visible;
+  min-height: 25px;
+} */
